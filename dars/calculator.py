@@ -9,6 +9,7 @@ def calculator():
     elif amal == "-":
         natija = abs(son1 - son2)
     elif amal == "*":
+        
         natija = son1 * son2
     elif amal == "/":
         if son2 != 0:
