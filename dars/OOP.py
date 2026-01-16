@@ -64,13 +64,13 @@ from googletrans import Translator
 
 translator = Translator()
 
-languages = ["uz", "en", "ru", "ko", "ar"]
+languages = ["uz", "en", "ru", "ko", "ka"]
 
 def translate_to(text: str, lang="uz"):
     return translator.translate(text=text, dest=lang).text
 
 
-bot = telebot.TeleBot(token="8442590122:AAELh4e9ccBm7wm5H4Gh6wM8GeyoqceoR2Y")
+bot = telebot.TeleBot(token="tg token")
 
 @bot.message_handler(commands=["start"])
 def start_handler(message: Message):
